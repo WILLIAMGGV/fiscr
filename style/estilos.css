@@ -1,0 +1,271 @@
+:root {
+    --white: #fff;
+    --bg-morado: #6633CC;
+    --fucsia: #FE2A9F;
+    --blue-dark: #003399;
+    --lila: #E0DEFE;
+    --bg-lila: #e0defe;
+    --bg-lila-dark: #c2d2e0;
+  }
+
+  .imagen-fondo {
+    background-image: url('/img/vectores-03.png'); /* Cambia esto por la ruta de tu imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-size: cover; /* Asegura que la imagen cubra todo el fondo */
+
+    background-position: center;
+    margin: 0; /* Elimina el margen por defecto */
+    height: 100%;
+}
+
+.imagen-fondo2 {
+  background-image: url('/img/pages/banner1.png'); /* Cambia esto por la ruta de tu imagen */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  background-size: cover; /* Asegura que la imagen cubra todo el fondo */
+  width: 100%;
+  background-position: center;
+  margin: 0; /* Elimina el margen por defecto */
+
+}
+
+.imagen-fondo3 {
+  background-image: url('/img/degradado.png'); /* Cambia esto por la ruta de tu imagen */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  background-size: cover; /* Asegura que la imagen cubra todo el fondo */
+  width: 100%;
+  background-position: center;
+  margin: 0; /* Elimina el margen por defecto */
+
+}
+  
+
+@font-face {
+  font-family: heligthon;
+  src: url("font/Heligthon.otf");
+}
+
+@font-face {
+  font-family: pangram-black;
+  src: url("font/Pangram-Black.otf");
+}
+@font-face {
+  font-family: pangram-bold;
+  src: url("font/Pangram-Bold.otf");
+}
+@font-face {
+  font-family: pangram-extrabold;
+  src: url("font/Pangram-ExtraBold.otf");
+}
+
+@font-face {
+  font-family: pangram-extralight;
+  src: url("font/Pangram-ExtraLight.otf");
+}
+
+@font-face {
+  font-family: pangram-light;
+  src: url("font/Pangram-Light.otf");
+}
+
+@font-face {
+  font-family: pangram-medium;
+  src: url("font/Pangram-Medium.otf");
+}
+
+@font-face {
+  font-family: pangram-regular;
+  src: url("font/Pangram-Regular.otf");
+}
+
+@font-face {
+  font-family: boldena;
+  src: url("font/BoldenaBoldPersonalUse.ttf");
+}
+
+
+.fuente-boldena {
+  font-family: boldena;
+
+}
+
+.fuente-heligthon {
+  font-family: heligthon;
+
+}
+.fuente-pangram-black {
+  font-family: pangram-black;
+}
+.fuente-pangram-bold {
+  font-family: pangram-bold;
+}
+.fuente-pangram-extrabold {
+  font-family: pangram-extrabold;
+}
+.fuente-pangram-extralight {
+  font-family: pangram-extralight;
+}
+.fuente-pangram-light {
+  font-family: pangram-light;
+}
+.fuente-pangram-medium {
+  font-family: pangram-medium;
+}
+.fuente-pangram-regular {
+  font-family: pangram-regular;
+}
+
+.fondo-principal {
+  position: relative; /* Necesario para posicionar el pseudo-elemento */
+  width: 100%; /* Asegura que el contenedor ocupe todo el ancho */
+  overflow: hidden; /* Opcional: oculta cualquier contenido que se desborde */
+}
+
+.fondo-principal::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("../img/fondo1.webp");
+  background-size: cover; /* Asegura que la imagen cubra todo el área */
+  background-position: center; /* Centra la imagen */
+  opacity: 0.7; /* Opacidad de la imagen de fondo */
+  z-index: -1; /* Asegura que el pseudo-elemento esté detrás del contenido */
+}
+
+.fondo-trazos {
+  position: relative; /* Necesario para posicionar el pseudo-elemento */
+  width: 100%; /* Asegura que el contenedor ocupe todo el ancho */
+  overflow: hidden; /* Opcional: oculta cualquier contenido que se desborde */
+}
+
+.fondo-trazos::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("../img/patron.png");
+  background-color: var(--bg-lila);
+  background-size: cover; /* Asegura que la imagen cubra todo el área */
+  background-position: center; /* Centra la imagen */
+  opacity: 0.4; /* Opacidad de la imagen de fondo */
+  z-index: -1; /* Asegura que el pseudo-elemento esté detrás del contenido */
+}
+
+.text-shadow-2xl {
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); /* Efecto de sombra */
+}
+
+
+.container {
+  
+  position: relative; /* Necesario para posicionar la imagen */
+  overflow: hidden; /* Oculta cualquier contenido que se desborde */
+}
+
+.image1 {
+  position: absolute; /* Posiciona la imagen de forma absoluta */
+
+
+}
+
+
+.img1 {
+  max-width: 100%; /* Asegura que la imagen no exceda el ancho del contenedor */
+  height: auto; /* Mantiene la proporción de la imagen */
+  object-fit: contain;
+}
+
+
+
+.container .img2 {
+  transition: transform 0.3s ease; /* Transición suave para el efecto de agrandado */
+   /* Asegura que la imagen ocupe todo el ancho del contenedor */
+  height: auto; /* Mantiene la proporción de la imagen */
+}
+
+.container .img2:hover {
+  transform: scale(1.05); /* Aumenta el tamaño de la imagen al pasar el mouse */
+}
+
+.container .img2:hover {
+  filter: brightness(0.8); /* Cambia el brillo de la imagen al pasar el mouse */
+}
+
+.container:hover .fuente-boldena {
+  color: white;
+  background-color: #003399; /* Cambia el color de fondo del span */
+  font-weight: bold;
+}
+
+
+
+.marquesina {
+  width: 100%;
+  overflow: hidden; /* Ocultar el desbordamiento */
+  white-space: nowrap; /* Mantener las imágenes en una sola línea */
+}
+
+.contenedor3 {
+  display: inline-block;
+  animation: scroll 50s linear infinite; /* Animación de desplazamiento */
+}
+
+ .img3 {
+  width: 25%; /* Ajusta el tamaño de las imágenes */
+  height: auto; /* Mantener la proporción */
+  margin: 0; /* Sin margen */
+}
+
+@keyframes scroll {
+  0% {
+      transform: translateX(0);
+  }
+  100% {
+      transform: translateX(-300%); /* Moverse a la izquierda */
+  }
+}
+
+
+
+.video-container {
+  position: relative; /* Necesario para el posicionamiento */
+  overflow: hidden; /* Oculta cualquier parte del video que se salga del contenedor */
+  width: 100%; /* Asegura que el contenedor ocupe el 100% del ancho */
+  height: 0; /* Inicialmente, la altura es 0 */
+  padding-bottom: 56.25%; /* Proporción 16:9 (altura = 9/16 * ancho) */
+}
+
+.video-container video {
+  position: absolute; /* Posiciona el video de forma absoluta */
+  top: 0; /* Alinea el video en la parte superior */
+  left: 0; /* Alinea el video a la izquierda */
+  width: 100%; /* Asegura que el video ocupe todo el ancho del contenedor */
+  height: 100%; /* Asegura que el video ocupe toda la altura del contenedor */
+  object-fit: cover; /* Mantiene la proporción del video y lo recorta si es necesario */
+}
+
+.video-container2 {
+  position: relative; /* Necesario para el posicionamiento */
+  overflow: hidden; /* Oculta cualquier parte del video que se salga del contenedor */
+  width: 80%; /* Asegura que el contenedor ocupe el 100% del ancho */
+  height: 0; /* Inicialmente, la altura es 0 */
+  padding-bottom: 177.78%; /* Proporción 9:16 (altura = 16/9 * ancho) */
+}
+
+.video-container2 video {
+  position: absolute; /* Posiciona el video de forma absoluta */
+  top: 0; /* Alinea el video en la parte superior */
+  left: 0; /* Alinea el video a la izquierda */
+  width: 100%; /* Asegura que el video ocupe todo el ancho del contenedor */
+  height: 100%; /* Asegura que el video ocupe toda la altura del contenedor */
+  object-fit: cover; /* Mantiene la proporción del video y lo recorta si es necesario */
+}
+
+
+.sombra-div {
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Sombra oscura corta */
+}
