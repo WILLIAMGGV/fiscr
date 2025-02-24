@@ -19,7 +19,16 @@
 }
 
 .imagen-fondo2 {
-  background-image: url('/img/pages/banner1.png'); /* Cambia esto por la ruta de tu imagen */
+  background-image: url('/img/pages/cabezales-01.webp'); /* Cambia esto por la ruta de tu imagen */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  background-size: cover; /* Asegura que la imagen cubra todo el fondo */
+  width: 100%;
+  background-position: center;
+  margin: 0; /* Elimina el margen por defecto */
+
+}
+.imagen-fondo33 {
+  background-image: url('/img/pages/cabezales-04.webp'); /* Cambia esto por la ruta de tu imagen */
   background-repeat: no-repeat; /* Evita que la imagen se repita */
   background-size: cover; /* Asegura que la imagen cubra todo el fondo */
   width: 100%;
@@ -211,13 +220,17 @@
 
 .contenedor3 {
   display: inline-block;
+
   animation: scroll 50s linear infinite; /* Animación de desplazamiento */
 }
 
  .img3 {
   width: 25%; /* Ajusta el tamaño de las imágenes */
+  border-radius: 20px;
+  margin: 5px;
+  
   height: auto; /* Mantener la proporción */
-  margin: 0; /* Sin margen */
+
 }
 
 @keyframes scroll {
@@ -268,4 +281,20 @@
 
 .sombra-div {
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Sombra oscura corta */
+}
+
+
+.container-3d {
+  perspective: 1000px; /* Controla la profundidad del efecto 3D */
+}
+
+.imagen-3d {
+ 
+  transition: transform 0.5s; /* Transición suave */
+  transform-style: preserve-3d; /* Mantiene el efecto 3D */
+}
+
+.container-3d:hover .imagen-3d {
+  transform: rotateY(10deg) rotateX(10deg); /* Rotación en 3D al pasar el mouse */
+  cursor: pointer; /* Cambia el cursor al pasar el mouse */
 }
