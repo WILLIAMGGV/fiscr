@@ -26,25 +26,45 @@
     <div class="imagen-fondo2 h-[500px] flex flex-row place-content-center">
       <div class="w-[80%] h-[100%] grid grid-cols-2 gap-2 place-items-center">
         <div class="">
-          <p style="line-height: 1.1" style="letter-spacing: 5px">
-            <span class="fuente-pangram-extrabold text-[75px] text-white"
+          <p
+            style="line-height: 1.1"
+            style="letter-spacing: 5px"
+            class="flex flex-col"
+          >
+            <span
+              class="fuente-pangram-extrabold text-[95px] text-white"
+              data-aos="fade-up"
+              data-aos-duration="1000"
               >PROYECTO</span
             >
-            <span class="fuente-pangram-regular text-[55px] text-white"
+            <span
+              class="fuente-pangram-regular text-[70px] text-white"
+              data-aos="fade-left"
+              data-aos-anchor="#example-anchor"
+              data-aos-offset="500"
+              data-aos-duration="2000"
               >PLANTA EÓLICA</span
             >
-            <span class="fuente-boldena text-[95px] text-white">MOVASA</span>
+            <span
+              class="fuente-boldena text-[120px] text-white"
+              data-aos="flip-left"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="3000"
+              >MOVASA</span
+            >
           </p>
         </div>
         <div
           class="h-[100%] w-[100%] flex flex-row place-content-center items-center justify-center"
         >
-          <div
-            class="bg-[#F20505] cursor-pointer text-[20px] mt-[30%] p-6 fuente-pangram-extrabold text-white rounded-full transition-all duration-300 hover:bg-[#FF3C3C] hover:scale-105 hover:shadow-lg"
-            style="letter-spacing: 5px"
-          >
-            VER PRODUCTOS
-          </div>
+          <a href="https://fiscr.com/tienda/" target="_blank"
+            ><div
+              class="bg-[#F20505] cursor-pointer text-[20px] mt-[30%] p-6 fuente-pangram-extrabold text-white rounded-full transition-all duration-300 hover:bg-[#FF3C3C] hover:scale-105 hover:shadow-lg"
+              style="letter-spacing: 5px"
+            >
+              VER PRODUCTOS
+            </div>
+          </a>
         </div>
       </div>
     </div>
@@ -77,31 +97,41 @@
     </div>
     <br /><br />
     <div class="imagen-fondo3">
-      <div class="flex flex-row place-content-center">
+      <div
+        class="flex flex-col place-content-center justify-center items-center"
+      >
+        <div class="w-[90%] flex flex-row place-content-center">
+          <p style="line-height: 1.1"></p>
+        </div>
+        <br />
         <div class="grid grid-cols-2 gap-2 w-[90%]">
           <div class="flex flex-col">
-            <p style="line-height: 1.1">
-              <span class="text-[38px] fuente-pangram-regular text-[#025373]"
+            <p style="line-height: 1.1" class="flex flex-col">
+              <br />
+              <span
+                data-aos="fade-down"
+                data-aos-easing="linear"
+                data-aos-duration="1500"
+                class="text-[38px] fuente-pangram-regular text-[#025373]"
                 ><span class="fuente-pangram-extrabold">Solución</span>
-                tecnológica para la</span
+                tecnológica para la vigilancia de torres eólicas con</span
               >
-              <span class="text-[38px] fuente-pangram-regular text-[#025373]"
-                >vigilancia de torres eólicas con</span
-              >
-              <span class="text-[115px] fuente-pangram-extrabold text-[#F20505]"
+              <span
+                data-aos="fade-zoom-in"
+                data-aos-easing="linear"
+                data-aos-duration="2000"
+                class="text-[135px] fuente-pangram-extrabold text-[#F20505]"
                 >LoRaWAN</span
               >
             </p>
           </div>
           <div
+            data-aos="fade-left"
+            data-aos-easing="linear"
+            data-aos-duration="3000"
             class="flex flex-col relative place-content-end items-end justify-end"
           >
-            <img
-              src="img/vectores-04.png"
-              class="absolute mt-[-50px]"
-              alt=""
-              width="100%"
-            />
+            <img src="img/vectores-04.png" alt="" width="80%" />
             <img
               src="img/vectores-06.png"
               class="mr-[10%]"
@@ -152,7 +182,7 @@
               />
               <div class="video-container rounded-[30px]">
                 <video autoplay muted loop>
-                  <source src="img/proyecto2/video1.mp4" type="video/mp4" />
+                  <source src="img/proyecto1/video1.mp4" type="video/mp4" />
                   Your browser does not support the video tag.
                 </video>
               </div>
@@ -188,6 +218,7 @@
               class="fuente-pangram-regular text-[#025373] text-[30px] pr-6"
               style="line-height: 1.5"
             >
+              <br /><br /><br />
               <span class="text-[#F20505] fuente-pangram-extrabold"
                 >Para abordar este problema, implementamos una solución
                 innovadora y efectiva:</span
@@ -218,12 +249,25 @@
               class="video-container2 rounded-[30px] flex flex-row place-content-center items-center justify-center"
             >
               <video autoplay muted loop>
-                <source src="img/proyecto2/video2.mp4" type="video/mp4" />
+                <source src="img/proyecto1/video2.mp4" type="video/mp4" />
                 Your browser does not support the video tag.
               </video>
             </div>
           </div>
         </div>
+      </div>
+    </div>
+
+    <div class="flex flex-row place-content-center justify-center items-center">
+      <div
+        class="flex flex-row w-full place-content-center justify-start items-start"
+      >
+        <img src="img/vectoresdemesa.png" width="200px" alt="" />
+      </div>
+      <div
+        class="flex flex-row w-full place-content-center justify-end items-end"
+      >
+        <img src="img/vectores-02.png" width="200px" height="50px" alt="" />
       </div>
     </div>
 

@@ -37,6 +37,56 @@
 
 }
 
+.imagen-fondo333 {
+  background-image: url('/img/pages/cabezales-07.webp'); /* Cambia esto por la ruta de tu imagen */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  background-size: cover; /* Asegura que la imagen cubra todo el fondo */
+  width: 100%;
+  background-position: center;
+  margin: 0; /* Elimina el margen por defecto */
+
+}
+
+.imagen-fondo4 {
+  background-image: url('/img/pages/cabezales-03.webp'); /* Cambia esto por la ruta de tu imagen */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  background-size: cover; /* Asegura que la imagen cubra todo el fondo */
+  width: 100%;
+  background-position: center;
+  margin: 0; /* Elimina el margen por defecto */
+
+}
+
+.imagen-fondo5 {
+  background-image: url('/img/pages/cabezales-05.webp'); /* Cambia esto por la ruta de tu imagen */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  background-size: cover; /* Asegura que la imagen cubra todo el fondo */
+  width: 100%;
+  background-position: center;
+  margin: 0; /* Elimina el margen por defecto */
+
+}
+
+.imagen-fondo6 {
+  background-image: url('/img/pages/cabezales-08.webp'); /* Cambia esto por la ruta de tu imagen */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  background-size: cover; /* Asegura que la imagen cubra todo el fondo */
+  width: 100%;
+  background-position: center;
+  margin: 0; /* Elimina el margen por defecto */
+
+}
+
+.imagen-fondo7 {
+  background-image: url('/img/pages/cabezales-02.webp'); /* Cambia esto por la ruta de tu imagen */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  background-size: cover; /* Asegura que la imagen cubra todo el fondo */
+  width: 100%;
+  background-position: center;
+  margin: 0; /* Elimina el margen por defecto */
+
+}
+
 .imagen-fondo3 {
   background-image: url('/img/degradado.png'); /* Cambia esto por la ruta de tu imagen */
   background-repeat: no-repeat; /* Evita que la imagen se repita */
@@ -45,6 +95,16 @@
   background-position: center;
   margin: 0; /* Elimina el margen por defecto */
 
+}
+
+
+.overlay {
+  transform: translateY(100%); /* Comienza fuera de la vista */
+  transition: transform 0.3s ease; /* Transición suave */
+}
+
+.containermenu:hover .overlay {
+  transform: translateY(0); /* Mueve el div hacia arriba */
 }
   
 
@@ -189,6 +249,14 @@
 }
 
 
+.img2 {
+  border-radius: 30px;
+  margin-top: 20px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
+
 
 .container .img2 {
   transition: transform 0.3s ease; /* Transición suave para el efecto de agrandado */
@@ -198,16 +266,40 @@
 
 .container .img2:hover {
   transform: scale(1.05); /* Aumenta el tamaño de la imagen al pasar el mouse */
+  cursor: pointer;
 }
 
 .container .img2:hover {
-  filter: brightness(0.8); /* Cambia el brillo de la imagen al pasar el mouse */
+  filter: brightness(0.4); /* Cambia el brillo de la imagen al pasar el mouse */
+  
 }
+
+
+
+
 
 .container:hover .fuente-boldena {
   color: white;
   background-color: #003399; /* Cambia el color de fondo del span */
   font-weight: bold;
+}
+
+.overlay {
+  transform: translateY(100%); /* Comienza fuera de la vista */
+  opacity: 0; /* Comienza oculto */
+  transition: opacity 0.3s ease, transform 0.3s ease; /* Transiciones suaves */
+}
+
+.containermenu:hover .overlay {
+
+  transform: translateY(0); /* Mueve el div hacia arriba */
+  opacity: 1; /* Muestra el div */
+
+}
+
+.containermenu:hover .img2 {
+  transform: scale(1.05);
+  filter: brightness(0.8);
 }
 
 
