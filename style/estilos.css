@@ -242,6 +242,13 @@
   height: 640px;
 }
 
+.container-head2 {
+  
+  position: relative; /* Necesario para posicionar la imagen */
+  overflow: hidden; /* Oculta cualquier contenido que se desborde */
+  height: 250px;
+}
+
 .image1 {
   position: absolute; /* Posiciona la imagen de forma absoluta */
 
@@ -323,8 +330,23 @@
   animation: scroll 50s linear infinite; /* Animación de desplazamiento */
 }
 
+.contenedor33 {
+  display: inline-block;
+
+  animation: scrollsm 50s linear infinite; /* Animación de desplazamiento */
+}
+
  .img3 {
   width: 25%; /* Ajusta el tamaño de las imágenes */
+  border-radius: 20px;
+  margin: 5px;
+  
+  height: auto; /* Mantener la proporción */
+
+}
+
+.img33 {
+  width: 50%; /* Ajusta el tamaño de las imágenes */
   border-radius: 20px;
   margin: 5px;
   
@@ -338,6 +360,15 @@
   }
   100% {
       transform: translateX(-300%); /* Moverse a la izquierda */
+  }
+}
+
+@keyframes scrollsm {
+  0% {
+      transform: translateX(0);
+  }
+  100% {
+      transform: translateX(-600%); /* Moverse a la izquierda */
   }
 }
 
