@@ -13,14 +13,76 @@
     />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <link rel="stylesheet" href="style/estilos.css" />
+    <link rel="stylesheet" href="style/estilos2.css" />
   </head>
   <body class="fondo1">
     <!-- LOGO -->
 
-    <div class="ml-6 w-[140px] sm:w-[200px] mt-4 container-3d">
-      <a href="/"><img src="img/logo.png" alt="" class="imagen-3d" /></a>
-    </div>
+    <header>
+      <div class="logo container-3d">
+        <a href="https://fiscr.com/"
+          ><img src="img/logo.png" class="imagen-3d" alt="Logo"
+        /></a>
+      </div>
+      <nav class="navbar text-center sm:text-left fuente-pangram-regular">
+        <ul>
+          <li>
+            <a
+              href="https://fiscr.com/"
+              class="hover:font-black hover:rounded-2xl hover:bg-blue-900 hover:text-white p-2 hover:p-2"
+              >Inicio</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://cloud.milesight-iot.com/#/index/login"
+              class="hover:font-black hover:rounded-2xl hover:bg-blue-900 hover:text-white p-2 hover:p-2"
+              >Milesight</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://gestioniot.fiscr.com/?_gl=1*u0ylso*_ga*MjE0NTQ3MTIwNi4xNzM4MTc2MTM2*_ga_BEFKH5N2Y5*MTc0MTAyMzQ3NC41LjEuMTc0MTAyNDc5NC4wLjAuMA.."
+              class="hover:font-black hover:rounded-2xl hover:bg-blue-900 hover:text-white p-2 hover:p-2"
+              >IoT LoRaWAN</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://landing.fiscr.com"
+              class="hover:font-black hover:rounded-2xl hover:bg-blue-900 hover:text-white p-2 hover:p-2"
+              >Proyectos</a
+            >
+          </li>
+          <li>
+            <a
+              href="http://plu2.fiscr.com"
+              class="hover:font-black hover:rounded-2xl hover:bg-blue-900 hover:text-white p-2 hover:p-2"
+              >Full Pack</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://fiscr.com/tienda/"
+              class="hover:font-black hover:rounded-2xl hover:bg-blue-900 hover:text-white p-2 hover:p-2"
+              >Tienda</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://fiscr.com/carrito/"
+              class="hover:font-black hover:rounded-2xl hover:bg-blue-900 hover:text-white p-2 hover:p-2"
+              >Carrito</a
+            >
+          </li>
+        </ul>
+        <div class="menu-toggle" id="mobile-menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+    </header>
 
     <br />
     <div class="hidden sm:block">
@@ -905,5 +967,6 @@
     <script>
       AOS.init();
     </script>
+    <script src="scripts.js"></script>
   </body>
 </html>

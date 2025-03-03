@@ -488,3 +488,89 @@
 .fuente-boton {
   font-family: 'Overpass', Helvetica, Arial, Lucida, sans-serif !important;
 }
+
+
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #fff;
+}
+
+.logo img {
+  height: 80px; /* Ajusta el tamaño del logo */
+}
+
+.navbar {
+  display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: white; /* Fondo blanco */
+ 
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+}
+
+.navbar ul li {
+  margin: 0 15px;
+}
+
+.navbar ul li a {
+  color: #003366;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.menu-toggle .bar {
+  height: 3px;
+  width: 25px;
+  background-color: #003366;
+  margin: 3px 0;
+  
+}
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 768px) {
+  .navbar ul {
+      display: none; /* Ocultar el menú por defecto */
+      flex-direction: column; /* Cambiar a columna */
+      position: absolute; /* Posicionamiento absoluto */
+      top: 90px; /* Ajusta según la altura del header */
+      right: 0;
+      background-color: #fff; /* Fondo negro */
+      width: 100%; /* Ancho completo */
+      z-index: 1000; /* Asegurarse de que esté por encima de otros elementos */
+  }
+
+  .navbar ul li {
+      background-color: #fff; /* Fondo negro para cada elemento de la lista */
+      width: 100%; /* Asegurarse de que cada elemento ocupe todo el ancho */
+  }
+
+  .navbar ul li a {
+      color: #003366; /* Color del texto en blanco */
+      padding: 15px; /* Espaciado interno */
+      text-align: center; /* Centrar el texto */
+      display: block; /* Hacer que el enlace ocupe todo el ancho del li */
+  }
+
+  .navbar ul.active {
+      display: flex; /* Mostrar el menú cuando está activo */
+  }
+
+  .menu-toggle {
+      display: flex; /* Mostrar el icono del menú en móviles */
+  }
+}
